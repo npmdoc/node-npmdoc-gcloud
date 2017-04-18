@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.gcloud.gcloud">
+            function <span class="apidocSignatureSpan"></span>gcloud
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.gcloud.bigquery">
             function <span class="apidocSignatureSpan">gcloud.</span>bigquery
             <span class="apidocSignatureSpan">(options)</span>
@@ -1822,6 +1831,34 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gcloud" id="apidoc.module.gcloud">module gcloud</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gcloud.gcloud" id="apidoc.element.gcloud.gcloud">
+        function <span class="apidocSignatureSpan"></span>gcloud
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gcloud(config) {
+  config = extend(true, { interceptors_: [] }, config);
+
+  var gcloudExposedApi = {
+    config_: config,
+    interceptors: config.interceptors_
+  };
+
+  return Object.keys(apis).reduce(function(gcloudExposedApi, apiName) {
+    var Class = apis[apiName];
+
+    gcloudExposedApi[apiName] = Class;
+
+    return gcloudExposedApi;
+  }, gcloudExposedApi);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
