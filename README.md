@@ -1,6 +1,6 @@
 # npmdoc-gcloud
 
-#### api documentation for  [gcloud (v0.37.2)](https://github.com/googlecloudplatform/gcloud-node#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gcloud.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gcloud) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gcloud.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gcloud)
+#### basic api documentation for  [gcloud (v0.37.2)](https://github.com/googlecloudplatform/gcloud-node#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gcloud.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gcloud) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gcloud.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gcloud)
 
 #### Google Cloud APIs Client Library for Node.js
 
@@ -202,7 +202,8 @@
         "system-test": "mocha system-test/*.js --no-timeouts --bail",
         "test": "npm run docs && mocha test/docs.js test/index.js test/*/*.js"
     },
-    "version": "0.37.2"
+    "version": "0.37.2",
+    "bin": {}
 }
 ```
 
